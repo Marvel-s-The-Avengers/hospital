@@ -3,7 +3,7 @@
 
 
 		<footer class="footer">
-		    版权归第二医院所有
+		    版权归第七医院所有
 		</footer>
 		<script src="../../statics/js/bootstrap.min.js" type="text/javascript"></script>
 		<script type="text/javascript" src="../../statics/js/time.js"></script>

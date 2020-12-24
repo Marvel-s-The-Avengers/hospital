@@ -9,8 +9,8 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 </select>-->
 
 
-<select id="getMedicineList" parameterType="String" resultType="Medicine">
-	SELECT * from HOSPITAL_MEDICINE where 1=1
+<select id="getMedicineList"  resultType="Medicine">
+	SELECT * from hospital_medicine where 1=1
 	<if test="medicineName!=null and medicineName!=''">
 		and medicineName like concat("%",#{medicineName},"%")
 	</if>
