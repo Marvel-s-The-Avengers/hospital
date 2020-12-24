@@ -21,7 +21,7 @@ public class MedicineServiceImpl implements MedicineService {
 
             /*connection.setAutoCommit(false);//开启JDBC事务管理*/
             int updateRows = medicineMapper.add(medicine);
- /*           connection.commit();*/
+            /*           connection.commit();*/
             if(updateRows > 0){
                 flag = true;
                 System.out.println("add success!");
@@ -45,10 +45,10 @@ public class MedicineServiceImpl implements MedicineService {
     }
 
     @Override
-    public List<Medicine> getMedicineList(String queryName, int currentPageNo, int pageSize) throws Exception {
+    public List<Medicine> getMedicineList(String medicineName, int currentPageNo, int pageSize) throws Exception {
         List<Medicine> medicineList = null;
         try {
-            medicineList = medicineMapper.getMedicineList(queryName,(currentPageNo-1)*pageSize,pageSize);
+            medicineList = medicineMapper.getMedicineList(medicineName,(currentPageNo-1)*pageSize,pageSize);
             System.out.println(medicineList);
         } catch (Exception e) {
             // TODO Auto-generated catch block

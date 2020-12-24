@@ -1,6 +1,5 @@
 package com.two.service;
 
-import com.two.entity.Doctor;
 import com.two.entity.Medicine;
 import org.apache.ibatis.annotations.Param;
 
@@ -16,20 +15,15 @@ public interface MedicineService {
      */
     public boolean add(Medicine medicine)throws Exception;
 
-//    /**
-//     * 通过条件查询-medicineList
-//     * @param connection
-//     * @param medicineName
-//     * @param medicineNo
-//     * @return
-//     * @throws Exception
-//     */
-//    public List<Medicine> getMedicineList(@Param("medicineName") String medicineName, @Param("currentPageNo") int currentPageNo, @Param("pageSize") int pageSize)throws Exception;
     /**
-     * 药品清单
+     * 通过条件查询-medicineList
+     * @param connection
+     * @param medicineName
+     * @param medicineNo
      * @return
+     * @throws Exception
      */
-    public List<Medicine> getMedicineList(String queryName, int currentPageNo, int pageSize) throws Exception;
+    public List<Medicine> getMedicineList(@Param("medicineName") String medicineName, @Param("currentPageNo") int currentPageNo, @Param("pageSize") int pageSize)throws Exception;
     /**
      * 通过条件查询-药品表记录数
      * @param connection
