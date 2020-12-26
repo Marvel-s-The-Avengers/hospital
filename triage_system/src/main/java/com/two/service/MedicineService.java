@@ -23,7 +23,7 @@ public interface MedicineService {
      * @return
      * @throws Exception
      */
-    public List<Medicine> getMedicineList(@Param("medicineName") String medicineName, @Param("currentPageNo") int currentPageNo, @Param("pageSize") int pageSize)throws Exception;
+    public List<Medicine> getMedicineList(String queryName, int currentPageNo, int pageSize)throws Exception;
     /**
      * 通过条件查询-药品表记录数
      * @param connection

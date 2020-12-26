@@ -9,7 +9,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 </select>-->
 
 
-<select id="getMedicineList"  resultType="Medicine">
+<select id="getMedicineList"  resultType="com.two.entity.Medicine">
 	SELECT * from hospital_medicine where 1=1
 	<if test="medicineName!=null and medicineName!=''">
 		and medicineName like concat("%",#{medicineName},"%")
@@ -17,7 +17,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	order by medicineNo DESC LIMIT #{currentPageNo},#{pageSize}
 </select>
 
-    <select id="getMedicineModList" resultType="Medicine">
+    <select id="getMedicineModList" resultType="com.two.entity.Medicine">
         SELECT * from HOSPITAL_MEDICINE
     </select>
 
@@ -29,20 +29,20 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
      </if>
 </select>
 
-   <select id="getMedicineByMedicineNo" resultType="Medicine">
+   <select id="getMedicineByMedicineNo" resultType="com.two.entity.Medicine">
 	   select * from hospital_medicine where medicineNo=#{No}
     </select>
 
 
 
-    <insert  id="add" parameterType="Medicine" >
+    <insert  id="add" parameterType="com.two.entity.Medicine" >
      insert into hospital_medicine (medicineNo,medicineName,medicineDisease,medicineDoses)values(NULL,#{medicineName},#{medicineDisease},#{medicineDoses})
     </insert>
 
 
         <delete id="deleteMedicineById">delete from hospital_medicine where medicineNo =#{selId}</delete>
 
-            <update id="modify" parameterType="Medicine">
+            <update id="modify" parameterType="com.two.entity.Medicine">
                 update hospital_medicine set medicineName=#{medicineName},medicineDisease=#{medicineDisease},medicineDoses=#{medicineDoses}
                 where medicineNo = #{medicineNo}
             </update>
