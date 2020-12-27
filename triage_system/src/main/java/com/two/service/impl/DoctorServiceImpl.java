@@ -8,11 +8,7 @@ import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import java.util.List;
 
-/**
- * @Description
- * @auther tjj
- * @create 2020-07-18 21:00
- */
+
 @Service("doctorService")
 public class DoctorServiceImpl implements DoctorService {
 
