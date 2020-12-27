@@ -7,11 +7,7 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 
-/**
- * @Description
- * @auther tjj
- * @create 2020-07-18 14:47
- */
+
 @Service("patientService")
 public class PatientServiceImpl implements PatientService {
     @Resource
