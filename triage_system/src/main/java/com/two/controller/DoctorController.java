@@ -12,11 +12,6 @@ import javax.annotation.Resource;
 import java.util.List;
 import java.util.Map;
 
-/**
- * @Description
- * @auther tjj
- * @create 2020-07-21 17:03
- */
 @Controller
 public class DoctorController {
     private Logger logger = Logger.getLogger(PatientController.class);

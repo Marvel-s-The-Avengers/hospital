@@ -8,11 +8,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-/**
- * @Description
- * @auther tjj
- * @create 2020-07-18 20:52
- */
+
 @Repository
 @Mapper
 public interface DoctorMapper {

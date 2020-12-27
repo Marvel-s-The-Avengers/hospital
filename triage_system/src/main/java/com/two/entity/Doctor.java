@@ -1,10 +1,6 @@
 package com.two.entity;
 
-/**
- * @Description
- * @auther tjj
- * @create 2020-07-18 20:50
- */
+
 public class Doctor {
      private Integer doctorNo;//医生编号
     private String doctorName;//医生名

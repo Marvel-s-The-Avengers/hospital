@@ -3,11 +3,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import java.util.Date;
-/**
- * @Description
- * @auther tjj
- * @create 2020-07-18 14:09
- */
+
 public class Patient {
 
     private Integer patientNo;//患者编号

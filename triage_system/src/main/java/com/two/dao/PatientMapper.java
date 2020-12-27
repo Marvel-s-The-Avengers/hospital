@@ -6,11 +6,7 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
-/**
- * @Description
- * @auther tjj
- * @create 2020-07-18 14:33
- */
+
 @Repository
 @Mapper
 public interface PatientMapper {

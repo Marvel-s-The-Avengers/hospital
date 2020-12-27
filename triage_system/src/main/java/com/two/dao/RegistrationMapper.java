@@ -8,11 +8,6 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-/**
- * @Description
- * @auther tjj
- * @create 2020-07-19 14:31
- */
 @Repository
 @Mapper
 public interface RegistrationMapper {

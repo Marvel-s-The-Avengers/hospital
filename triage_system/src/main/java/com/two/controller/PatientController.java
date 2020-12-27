@@ -20,11 +20,7 @@ import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
 import java.util.List;
 
-/**
- * @Description
- * @auther tjj
- * @create 2020-07-18 16:05
- */
+
 @Controller
 public class PatientController {
 

@@ -5,11 +5,6 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 import java.util.Date;
 
-/**
- * @Description
- * @auther tjj
- * @create 2020-07-19 14:25
- */
 public class Registration {
     private Integer regNo;//病号序号
     private String regPatientName;//患者
