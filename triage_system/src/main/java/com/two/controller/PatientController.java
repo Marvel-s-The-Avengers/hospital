@@ -45,7 +45,6 @@ private DoctorService doctorService;
 	@RequestMapping("registrationAdd.html")
 	public String patientAdd(@ModelAttribute("registration")Registration registration){
 		logger.debug("---------访问了预约界面");
-
 		return "appint";
 	}
 //预约

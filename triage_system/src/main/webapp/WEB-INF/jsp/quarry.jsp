@@ -109,9 +109,6 @@
                         <tr></tr>
 
                     </c:if>
-
-
-
                 </c:forEach>
 
             </tbody>

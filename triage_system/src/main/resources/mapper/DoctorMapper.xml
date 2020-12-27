@@ -5,13 +5,13 @@
 <mapper namespace="com.two.dao.DoctorMapper">
 
 
-    <select id="getDoctorList" resultType="Doctor">
+    <select id="getDoctorList" resultType="com.two.entity.Doctor">
         select distinct doctorBel from hospital_doctor
     </select>
 
 
 
-    <select id="getClinicDoc" resultType="Doctor">
+    <select id="getClinicDoc" resultType="com.two.entity.Doctor">
         select * from hospital_doctor where doctorBel=#{doctorBel}
     </select>
 

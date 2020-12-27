@@ -98,7 +98,6 @@
 						   </div>  
 						 <ul class="banner_login">
 				   		 	<li><a href="${pageContext.request.contextPath }/registrationAdd.html">预约挂号</a></li>
-
 				   		  </ul>
 						 </div>
 						<ul class="social">
@@ -235,9 +234,6 @@
 							  <p>  </p>
 						  </div>
 					  </li>
-
-
-
 				 </ul>
 				<script type="text/javascript">
 			$(window).load(function() {

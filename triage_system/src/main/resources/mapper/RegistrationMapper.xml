@@ -5,20 +5,20 @@
 <mapper namespace="com.two.dao.RegistrationMapper">
 
 
-    <select id="getRegistrationList" resultType="Registration">
+    <select id="getRegistrationList" resultType="com.two.entity.Registration">
         select * from hospital_registration
     </select>
 
-    <insert id="addReg" parameterType="Registration">
+    <insert id="addReg" parameterType="com.two.entity.Registration">
         insert into hospital_registration (regNo,regPatientName,regDate,regClinicName,regDoctorName,regPatientSymptoms)
         values (#{regNo},#{regPatientName},#{regDate},#{regClinicName},#{regDoctorName},#{regPatientSymptoms})
     </insert>
 
-    <select id="getRegistration" resultType="Registration">
+    <select id="getRegistration" resultType="com.two.entity.Registration">
         select * from hospital_patient p  where p.patientName=#{regPatientName}
     </select>
     
-    <select id="getDiagnosis" resultType="Registration">
+    <select id="getDiagnosis" resultType="com.two.entity.Registration">
        select * from hospital_patient p,hospital_registration r where p.patientName=r.regPatientName and r.regPatientName=#{regPatientName} and p.patientTel=#{patientTel}
     </select>
     

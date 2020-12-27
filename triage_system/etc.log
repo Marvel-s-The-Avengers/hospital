@@ -755,3 +755,7 @@
 2020-12-27 14:22:13 com.two.controller.PatientController.login(PatientController.java:44) PatientController.java DEBUG ===============用户访问了PatientController的login方法===============
 2020-12-27 14:22:28 com.two.controller.PatientController.patientAdd(PatientController.java:51) PatientController.java DEBUG ---------访问了预约界面
 2020-12-27 14:23:42 com.two.controller.PatientController.patientAdd(PatientController.java:51) PatientController.java DEBUG ---------访问了预约界面
+2020-12-27 15:34:40 com.two.controller.PatientController.login(PatientController.java:40) PatientController.java DEBUG ===============用户访问了PatientController的login方法===============
+2020-12-27 15:34:43 com.two.controller.PatientController.login(PatientController.java:40) PatientController.java DEBUG ===============用户访问了PatientController的login方法===============
+2020-12-27 15:40:45 com.two.controller.PatientController.patientAdd(PatientController.java:47) PatientController.java DEBUG ---------访问了预约界面
+2020-12-27 15:40:52 com.two.controller.PatientController.querry(PatientController.java:96) PatientController.java DEBUG ===============用户访问了PatientController的querry界面===============
