@@ -9,11 +9,7 @@ import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import java.util.List;
 
-/**
- * @Description
- * @auther tjj
- * @create 2020-07-19 14:42
- */
+
 @Service("registrationService")
 public class RegistrationServiceImpl implements RegistrationService {
 
